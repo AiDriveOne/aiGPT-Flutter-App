@@ -1,0 +1,5 @@
+<dependency>
+    <groupId>ai.openai</groupId>
+    <artifactId>api</artifactId>
+    <version>1.0.0</version>
+</dependency>
