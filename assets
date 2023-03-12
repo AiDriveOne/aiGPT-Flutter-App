@@ -1,0 +1,22 @@
+web iOS and tablet and mobile
+
+Assets typically refer to static files such as images, audio files, videos, and other resources that are used by an application. These files are packaged with the application and can be accessed by the application during runtime.
+
+To add assets to a Flutter project, you need to create a folder named assets at the root level of your project. Inside this folder, you can create subfolders to organize your assets. For example, you could have an images folder for images, a sounds folder for audio files, and so on.
+
+After adding your assets, you need to declare them in the pubspec.yaml file. This is a configuration file that contains information about your project, including its name, version, and dependencies. To declare assets, you need to add a section to the pubspec.yaml file that looks like this:
+
+bash
+Copy code
+flutter:
+  assets:
+    - assets/images/
+    - assets/sounds/
+In this example, we are declaring two asset folders, assets/images/ and assets/sounds/, that will be included with the application. Note that you need to include the trailing / after the folder name.
+
+After declaring your assets in the pubspec.yaml file, you can access them in your code using the AssetImage class. For example:
+
+python
+Copy code
+Image.asset('assets/images/my_image.png')
+This code will load the image file my_image.png from the assets/images/ folder. You can also use other asset classes, such as AudioCache and VideoPlayer, to load and play audio and video files from your assets folder.
